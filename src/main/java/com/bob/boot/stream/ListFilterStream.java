@@ -36,5 +36,8 @@ public class ListFilterStream {
 		}
 
 		System.out.println(ps.size());
+		
+		//逗号拼接
+		System.out.println("old list itemNums:"+ps.stream().map(n -> s.getAge()).collect(Collectors.joining(",")));
 	}
 }
